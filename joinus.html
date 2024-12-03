@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LMS--Subjects</title>
+    <title>LMS--Join us</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -26,43 +26,58 @@
             font-size: 18px;
             margin: 10px 0;
         }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
         .container {
-            width: 90%;
-            margin: 0 auto;
+            width: 50%;
+            margin: 30px auto;
+            background-color: #fff;
             padding: 20px;
-        }
-        .perfume-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 20px;
-        }
-        .perfume-card {
-            background-color: white;
-            padding: 15px;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        label {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            display: block;
+        }
+        input[type="text"], input[type="email"], input[type="number"], input[type="date"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .button-container {
             text-align: center;
         }
-        .perfume-card img {
-            width: 100%;
-            border-radius: 8px;
-            max-height: 250px;
-            object-fit: cover;
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            width: 50%;
         }
-        .perfume-card h3 {
-            font-size: 20px;
-            color: #e91e63;
-            margin-top: 15px;
-        }
-        .perfume-card p {
-            font-size: 16px;
-            color: #777;
-        }
-        .perfume-card .price {
-            font-size: 18px;
-            font-weight: bold;
-            color: #e91e63;
-            margin-top: 10px;
+        input[type="submit"]:hover {
+            background-color: #45a049;
         }
         footer {
             background-color: #333;
@@ -99,12 +114,63 @@
 
     </header>
 
-    
+    <div class="container">
+        <h1>Admission Form</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="number" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="course">Course Applied For:</label>
+                <select id="course" name="course" required>
+                    <option value="bsc_computer_science">B.Sc in Computer Science</option>
+                    <option value="btech_cse">B.Tech in Computer Science Engineering</option>
+                    <option value="msc_data_science">M.Sc in Data Science</option>
+                    <option value="mtech_ai">M.Tech in Artificial Intelligence</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="address">Permanent Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+            <div class="form-group">
+                <label>Are you a hostel resident?</label>
+                <input type="checkbox" id="hostel" name="hostel">
+                <label for="hostel">Yes, I require hostel accommodation.</label>
+            </div>
+            <div class="button-container">
+                <input type="submit" value="Submit Application">
+            </div>
+        </form>
+    </div>
 
     <footer>
         <h4>Contact Information</h4>
-        <p>Name: Pradeep</p>
-        <p>Email: <a href="mailto:sdfghj@gmil.com" style="color: #fff;">sdfghj@gmil.com</a></p>
+        <p>Name: Kiruba Sri</p>
+        <p>Email: <a href="mailto:willyoubewithmeforeverandever@gmail.com"
+                style="color: #fff;">willyoubewithmeforeverandever@gmail.com</a></p>
         <p>Phone: 1234567890</p>
     </footer>
 
